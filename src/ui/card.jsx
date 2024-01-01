@@ -164,6 +164,9 @@ const card = () => {
       </div>
     </section>
   </section>
+  <div className="load_more">
+  <a className='load'>Load More</a>
+  </div>
   </>
 
 

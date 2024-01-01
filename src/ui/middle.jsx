@@ -166,6 +166,7 @@ const middle = () => {
               Rs.00.00<span></span>
             </p>
           </div>
+          
         </section>
       </section>
   </>

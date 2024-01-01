@@ -35,14 +35,14 @@ const header = () => {
             ></input>
           </div>
           <div className="cart">
-            <div className="login">
+            <div className="login ">
               <a href="">
-                <FaUser /> Login
+                <FaUser /> Login &nbsp; |
               </a>
             </div>
             <div className="signup">
               <a>
-              <FaSignInAlt /> signup
+               SignUp
               </a>
             </div>
             <div className="lang">

@@ -4,6 +4,7 @@ const footer = () => {
   return (
     <>
     <section className="footer">
+    <section className="footer_section">
         <div className="footer1">
         <ul>
         <li><h6>Customer Care</h6></li>
@@ -53,6 +54,7 @@ const footer = () => {
 
 </div>
 
+      </section>
       </section>
     </>
   )
