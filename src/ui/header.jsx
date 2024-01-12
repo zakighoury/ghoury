@@ -1,16 +1,51 @@
 import React from "react";
-import Image from "../assets/img.png";
 import Profile from "../assets/profile.png";
+// import { useNavigate } from "react-router-dom";
+
 import {
   FaUser,
-  FaSignInAlt,
-  FaLanguage,
   FaShoppingCart,
   FaGlobe,
+  FaFemale,
+  FaKeyboard,
+  FaShippingFast,
+  FaCar,
+  FaDollarSign,
+  FaUndo,
+  FaShieldAlt,
 } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Menu, Dropdown } from "antd";
+import { Link } from "react-router-dom";
 
 const header = () => {
+  // const navigate = useNavigate();
+  
+  
+  const helpMenu = (
+    <Menu>
+      <Menu.Item key="helpCenter">
+        <FaFemale /> Help Center
+      </Menu.Item>
+      <Menu.Item key="chatWithUs">
+        <FaKeyboard /> Chat with Us
+      </Menu.Item>
+      <Menu.Item key="order">
+        <FaShippingFast /> Order
+      </Menu.Item>
+      <Menu.Item key="shipping">
+        <FaCar /> Shipping & Delivery
+      </Menu.Item>
+      <Menu.Item key="payment">
+        <FaDollarSign /> Payment
+      </Menu.Item>
+      <Menu.Item key="returnsRefunds">
+        <FaUndo /> Returns & Refunds
+      </Menu.Item>
+      <Menu.Item key="purchaseProtection">
+        <FaShieldAlt /> Purchase Protection
+      </Menu.Item>
+    </Menu>
+  );
   return (
     <>
       <section className="combined">
@@ -18,7 +53,9 @@ const header = () => {
           <div className="first">
             <a href="">Become a Seller</a>
             <a href=""> Affiliate Program</a>
-            <a href=""> Help & Support</a>
+            <Dropdown overlay={helpMenu} placement="bottomLeft">
+              <a href="#">Help & Support</a>
+            </Dropdown>{" "}
             <a href=""> Logistics Partner</a>
           </div>
           <div className="img_text">save more an app</div>
@@ -36,24 +73,25 @@ const header = () => {
           </div>
           <div className="cart">
             <div className="login ">
-              <a href="">
+              <Link className="a" to="/login">
                 <FaUser /> Login &nbsp; |
-              </a>
+              </Link>
             </div>
             <div className="signup">
-              <a>
-               SignUp
-              </a>
+              <Link className="a" to="/signup">
+                SignUp
+              </Link>
             </div>
             <div className="lang">
-                <a>
-              <FaGlobe /> EN
-              </a>
+              
+                <a className="a" >
+                    <FaGlobe />&nbsp;EN&nbsp;
+                </a>
             </div>
             <div className="shop">
-                <a>
-              <FaShoppingCart /> 
-                </a>
+              <Link className="a" to="/shop">
+                <FaShoppingCart />
+              </Link>
             </div>
           </div>
         </section>
