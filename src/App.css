@@ -36,27 +36,46 @@
 
 }
 .login a:hover{
-background-color: black;
-opacity: 0.5;
+background-color: #DF4D05;
+color: white;
+border-radius: 10px;
+
+}
+.signup a:hover{
+background-color: #DF4D05;
 border-radius: 10px;
 
 }
 .signup a{
   text-decoration: none;
   color: white;
+  padding: 10px 20px;
+
 
 }
 .lang a{
   text-decoration: none;
   color: white;
+  padding: 10px 10px;
+
 
 }
+.lang a:hover{
+  background-color: #DF4D05;
+  border-radius: 10px;
+  
+  }
 
 .shop a{
   text-decoration: none;
   color: white;
-
+  padding: 10px 10px;
 }
+.shop a:hover{
+  background-color: #DF4D05;
+  border-radius: 10px;
+  
+  }
 .second {
   height: 60px;
   background-color: orangered;
